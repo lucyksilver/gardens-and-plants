@@ -1,6 +1,6 @@
 class PlantsController < ApplicationController
   def create
-    # Find the information from the from through the plant params
+    # Find the information from the form through the plant params
     @plant = Plant.new(plant_params)
     # Find the garden's ID in the params, so we know which garden the plant belongs to
     @garden = Garden.find(params[:garden_id])
